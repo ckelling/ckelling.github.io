@@ -1,0 +1,7 @@
+[1,"==> quarto preview index.qmd --to html --no-watch-inputs --no-browse\n\n"]
+[1,"pandoc \n  to: html\n  output-file: index.html\n  standalone: true\n  title-prefix: Claire Kelling\n  section-divs: true\n  html-math-method: mathjax\n  wrap: none\n  default-image-extension: png\n  css:\n    - styles.css\n  toc: false\n  email-obfuscation: javascript\n  \nmetadata\n  document-css: false\n  link-citations: true\n  date-format: long\n  lang: en\n  description-meta: 'Assistant Professor of Statistics, Carleton College'\n  author-meta: Claire Kelling\n  bibliography:\n    - references.bib\n  theme: cosmo\n  footnotes-hover: true\n  code-copy: true\n  title: Claire Kelling\n  image: files/prof_headshot.png\n  page-navigation: false\n  page-layout: full\n  about:\n    id: hero-heading\n    template: trestles\n    image-width: 70%\n    links:\n      - icon: envelope\n        text: E-mail\n        href: 'mailto:ckelling@carleton.edu'\n      - icon: linkedin\n        text: LinkedIn\n        href: 'https://www.linkedin.com/in/claire-kelling'\n        target: _blank\n  \n"]
+[1,"Output created: docs\\index.html\n\nTerminating existing preview server....DONE\n\n"]
+[1,"Preparing to preview\n"]
+[1,"\n"]
+[1,"Watching files for changes\nBrowse at http://localhost:6046/\n"]
+[1,"GET: /\n"]
