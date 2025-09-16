@@ -1,0 +1,76 @@
+---
+title: "Claire Kelling"
+description-meta: "Assistant Professor of Statistics, Carleton College"
+image: "files/prof_headshot.png"
+page-navigation: false
+toc: false
+#sidebar: false
+page-layout: full
+
+about:
+  id: hero-heading
+  template: trestles
+  image-width: 70%
+  links:
+    #- icon: sun
+    #  text: Lab
+    #  href: https://www.github.com
+    #  target: _blank
+    #- icon: globe
+    #  text: Uprofile
+    #  href: https://baruch.cuny.edu
+    #  target: _blank
+    - icon: envelope
+      text: E-mail
+      href: mailto:ckelling@carleton.edu  
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/claire-kelling
+      target: _blank
+    #- icon: youtube
+    #  text: YouTube
+    #  href: https://www.youtube.com     
+    #  target: _blank 
+    #- text: "{{< ai orcid >}} ORCID"   # use academic icons, "" are needed, you also need to install the fontawesome extension
+    #  href: https://orcid.org
+    #  target: _blank
+    #- text: "{{< ai clarivate >}} Web of Science"
+    #  href: https://www.webofscience.com  
+    #  target: _blank
+    #- text: "{{< ai scopus >}} Scopus"
+    #  href: https://www.scopus.com
+    #  target: _blank
+    #- text: "{{< ai google-scholar >}} Google Scholar"
+    #  href: https://scholar.google.com
+    #  target: _blank
+#    - text: "{{< ai researchgate >}} Research Gate"
+#      href: https://www.researchgate.net
+#      target: _blank
+
+# listing:   # Comment the listing section and delete corresponding lines in the index.qmd file to remove the recent posts
+#   - id: recent-posts
+#     contents: 
+#       - posts
+#       - posts/post-links.yml
+#     exclude:
+#       title: ""
+#     type: grid
+#     max-items: 3
+# #    image-height: 150px
+#     page-size: 3 #set same as max-times to remove the page number setting
+#     fields: [image, date, title, subtitle]
+#     max-description-length: 75
+#     sort: 
+#       - "date desc"
+#       - "title asc"
+---
+
+::: {#hero-heading}
+I am an Assistant Professor of Statistics at Carleton College. I completed my Dual PhD in Statistics and Social Data Analytics at Penn State. Before that, I earned degrees in Statistics and Economics at Virginia Tech.
+
+As a triplet from the small town of Morrow, Ohio, I grew up spending lots of time outside- swimming, kayaking, biking, and hiking. I love exploring through these activities now, as well as weaving and hiking with my dog.
+
+My research engages statistics, sociology, and data science in order to develop statistical methods for complex social science applications. My primary focus recently is on the development of statistical methods in spatial statistics for the analysis of policing data in partnership with community members and organizations.
+
+**I am in the process of migrating my website- more coming soon!**
+:::

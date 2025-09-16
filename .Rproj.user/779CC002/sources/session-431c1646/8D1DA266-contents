@@ -1,0 +1,109 @@
+project:
+  type: website
+  output-dir: docs
+
+# Meta
+description-meta: "Claire Kelling's Personal Website"
+author-meta: "Claire Kelling"
+
+website:
+  title: "Claire Kelling"
+  image: "https://quarto.org/quarto.png"
+  description: "Claire Kelling's Personal Website"
+ 
+  navbar:
+    background: light  # You can change the background color here
+
+    left:   # You can comment out all navigation items here if you just like to keep the index page only
+#      - text: Home
+#        href: index.qmd
+      #- text: About
+      #  menu:
+          #- text: News
+          #  href: posts.qmd#category=news
+          #- text: Events
+          #  href: posts.qmd#category=event      
+      # - text: Research
+      #   menu:
+      #     - text: List of Publications
+      #       href: publications.qmd
+      #     - text: Selected Papers
+      #       href: posts.qmd#category=paper
+      #     - text: Grants
+      #       href: projects.qmd  
+      - text: Contact
+        menu: 
+           -  href: contact.qmd   
+      #- text: Teaching # Comment the Teaching part out to remove the Teaching page
+      #  href: teaching.qmd
+      #- text: Outreach
+      #  menu:        
+      #  - text: Presentations
+      #    href: posts.qmd#category=presentation                   
+      #- text: Group   # Comment the Group part out to remove the Group page
+      #  href: people.qmd
+
+    right: 
+      - text: CV
+        href: files/Kelling_CV_2pg.pdf
+      - icon: github
+        href: https://github.com/ckelling
+        target: _blank
+      # - text: "{{< fa brands bluesky >}}"
+      #   href: https://bsky.app
+      #   target: _blank      
+      # - icon: rss
+      #   href: posts.xml
+      #   target: _blank
+  
+  page-navigation: true
+  
+  page-footer: 
+    left: "[Claire Kelling](http://www.github.com) &copy; <script>document.write(new Date().getFullYear())</script>" 
+    center: "Adapted from [Quarto Academic Website Template](https://github.com/drganghe/quarto-academic-website-template)"
+    #right:  
+      # - icon: github
+      #   href: https://github.com/drganghe/quarto-academic-website-template
+      #   target: _blank
+      # - text: "{{< fa brands bluesky >}}" 
+      #   href: https://bsky.app
+      #   target: _blank
+      # - icon: rss
+      #   href: posts.xml
+      #   target: _blank  
+  
+  search:
+    location: navbar
+    type: textbox
+  
+  reader-mode: true
+
+  repo-url: https://ckelling.github.io/
+#  repo-actions: [edit, issue, source]
+  
+  open-graph: true
+  
+  twitter-card: true 
+#  card-style: summary      
+  
+  site-url: "https://ckelling.github.io/"
+  
+
+bibliography: references.bib  # Add references.bib to the root folder to enable the bibliography function
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    footnotes-hover: true
+    code-copy: true
+    code-link: true
+    code-overflow: wrap
+    fig-align: center
+    link-external-icon: false
+    link-external-newwindow: true
+    email-obfuscation: javascript
+    link-external-filter: '^(?:http:|https:)\/\/ckelling\.github\.io'
+    include-in-header: "files/includes/_academic.qmd"
+

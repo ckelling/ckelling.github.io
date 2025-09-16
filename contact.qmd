@@ -1,0 +1,13 @@
+---
+title: "Contact"
+description-meta: "Contact information"
+title-block-banner: false
+---
+
+<center>
+
+**Contact Me:**
+
+E-mail: ckelling at carleton dot edu
+
+</center>

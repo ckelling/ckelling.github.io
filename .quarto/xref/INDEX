@@ -1,0 +1,17 @@
+{
+  "index.qmd": {
+    "index.html": "b43fd999"
+  },
+  "posts/event-title/index.qmd": {
+    "index.html": "ff627574"
+  },
+  "posts/news-title/index.qmd": {
+    "index.html": "c2d82d6c"
+  },
+  "posts/paper-title/index.qmd": {
+    "index.html": "aa9448f4"
+  },
+  "contact.qmd": {
+    "contact.html": "d53e7e13"
+  }
+}
