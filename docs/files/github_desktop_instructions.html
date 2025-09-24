@@ -3046,11 +3046,11 @@ vertical-align: -.125em;
   <li><a href="#individual-research-projects" id="toc-individual-research-projects" class="nav-link" data-scroll-target="#individual-research-projects">Individual research projects</a>
   <ul class="collapse">
   <li><a href="#cloning-a-repository" id="toc-cloning-a-repository" class="nav-link" data-scroll-target="#cloning-a-repository">Cloning a repository</a></li>
-  <li><a href="#working-on-your-research" id="toc-working-on-your-research" class="nav-link" data-scroll-target="#working-on-your-research">Working on your research</a></li>
+  <li><a href="#working-on-your-researchexercise" id="toc-working-on-your-researchexercise" class="nav-link" data-scroll-target="#working-on-your-researchexercise">Working on your research/exercise</a></li>
   </ul></li>
-  <li><a href="#group-work" id="toc-group-work" class="nav-link" data-scroll-target="#group-work">Group work</a>
+  <li><a href="#setting-up-collaborative-work" id="toc-setting-up-collaborative-work" class="nav-link" data-scroll-target="#setting-up-collaborative-work">Setting up collaborative work</a>
   <ul class="collapse">
-  <li><a href="#creating-a-grouppartner-assignment-repo-and-project" id="toc-creating-a-grouppartner-assignment-repo-and-project" class="nav-link" data-scroll-target="#creating-a-grouppartner-assignment-repo-and-project">Creating a group/partner assignment repo and project</a></li>
+  <li><a href="#creating-a-group-repo" id="toc-creating-a-group-repo" class="nav-link" data-scroll-target="#creating-a-group-repo">Creating a group repo</a></li>
   </ul></li>
   <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional resources</a></li>
   </ul>
@@ -3085,8 +3085,8 @@ vertical-align: -.125em;
 
 <section id="getting-setup-with-github-desktop" class="level2">
 <h2 class="anchored" data-anchor-id="getting-setup-with-github-desktop">Getting setup with GitHub Desktop</h2>
-<p>You should first install the <a href="https://desktop.github.com/">Github Desktop application</a>. I use this app for my research because I can really easily see what changes I’ve made between pushes. I find the user interface to be very user friendly.</p>
-<p>Make sure you have followed steps 1-2 of <a href="https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop">Part 1: Installing and authenticating</a> for Github Desktop. This will connect your Github account with the files on your local computer.</p>
+<p>You should first install the <a href="https://desktop.github.com/">Github Desktop application</a>. I use this app for my research because I can really easily see what changes I’ve made between pushes. I find the user interface to be very user-friendly.</p>
+<p>Make sure you have followed steps 1-4 of <a href="https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop">Part 1: Installing and authenticating</a> for Github Desktop. This will connect your Github account with the files on your local computer.</p>
 <hr>
 </section>
 <section id="individual-research-projects" class="level2">
@@ -3094,17 +3094,17 @@ vertical-align: -.125em;
 <section id="cloning-a-repository" class="level3">
 <h3 class="anchored" data-anchor-id="cloning-a-repository">Cloning a repository</h3>
 <ol type="1">
-<li><p>Go to the GitHub page (hosted on <a href="https://github.com/" class="uri">https://github.com/</a>) and find your desired repo, such as <code>https://github.com/ckelling/github_workshop</code>.</p></li>
-<li><p>Enter the online assignment repository on GitHub. Click the green <strong>“Code”</strong> button. Click “Open with Github Desktop”.</p></li>
+<li><p>Go to the GitHub page (hosted on <a href="https://github.com/" class="uri">https://github.com/</a>) and find your desired repo, such as <code>https://github.com/ckelling/github_workshop</code>. For today’s workshop at Washington State, you should <strong>fork this repository</strong> so you have your own personal copy.</p></li>
+<li><p>Now, find your own personal copy of this repository on GitHub by navigating to your account. Click the green <strong>“Code”</strong> button. Click “Open with Github Desktop”.</p></li>
 <li><p>If prompted to “Allow this site to open… with GitHubDesktop?” click Open Link.</p></li>
-<li><p>In the Github Desktop window <em>do not change the repository URL</em> (the first argument). <em>Change the local path</em> to be within a folder that you’ve made for this class. Then click <em>Clone</em>.</p></li>
+<li><p>In the Github Desktop window <em>do not change the repository URL</em> (the first argument). <em>Change the local path</em> to be within a folder that you’d like to use for today’s materials. Then click <em>Clone</em>.</p></li>
 </ol>
 <p>You should now be able to see all files related to this repository in a folder on your local computer. Navigate to this folder in RStudio to edit files.</p>
 <p>I would suggest also creating an R Project within your directory for each repository, if one is not already present. This will make your life easier in terms of handling directories.</p>
 </section>
-<section id="working-on-your-research" class="level3">
-<h3 class="anchored" data-anchor-id="working-on-your-research">Working on your research</h3>
-<p>A folder should now be available for this repository on your local computer, which will allow you to start collaborating on this project. You can navigate to this repository in your <strong>File Explorer</strong> on your computer to find your files. Click on whatever file you want to edit (the .Rmd file for today) and edit away.</p>
+<section id="working-on-your-researchexercise" class="level3">
+<h3 class="anchored" data-anchor-id="working-on-your-researchexercise">Working on your research/exercise</h3>
+<p>A folder should now be available for this repository on your local computer, which will allow you to start collaborating on this project, assuming you have added collaborators (we won’t have time for that today). You can navigate to this repository in your <strong>File Explorer</strong> on your computer to find your files. Click on whatever file you want to edit (the .Rmd file for today) and edit away.</p>
 <section id="commits" class="level4">
 <h4 class="anchored" data-anchor-id="commits">Commits</h4>
 <p>After you make changes to the files, commit them. What are commits you ask? Commits are essentially taking a snapshot of your projects. Commits save this snapshot to your local version of Git (located on your hard drive or the maize server). For example, if I make changes to a code so that it prints “Hello world”, and then commit them with an informative message, I can look at the history of my commits and view the code that I wrote at that time. If I made some more changes to the function that resulted in an error, I could go back to the commit where the code was originally working. This prevents you from creating several versions of your work (test-v1, test-v2, …) or from trying to remember what your code originally looked like.</p>
@@ -3143,12 +3143,12 @@ vertical-align: -.125em;
 </section>
 </section>
 </section>
-<section id="group-work" class="level2">
-<h2 class="anchored" data-anchor-id="group-work">Group work</h2>
-<p>Collaborative Github assignments are pretty similar to individual assignments.</p>
-<section id="creating-a-grouppartner-assignment-repo-and-project" class="level3">
-<h3 class="anchored" data-anchor-id="creating-a-grouppartner-assignment-repo-and-project">Creating a group/partner assignment repo and project</h3>
-<p>Go to our course GitHub repository and find the repo. Clone this repo to your computer using the same steps done for an individual assignment (see steps 2-3).</p>
+<section id="setting-up-collaborative-work" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-collaborative-work">Setting up collaborative work</h2>
+<p>Collaborative Github repos are pretty similar to individual repos.</p>
+<section id="creating-a-group-repo" class="level3">
+<h3 class="anchored" data-anchor-id="creating-a-group-repo">Creating a group repo</h3>
+<p>Go to the desired GitHub repository. Add collaborators to the repo using “Settings” and “Collaborators” on the left hand side.</p>
 <section id="working-with-collaborative-repos" class="level4">
 <h4 class="anchored" data-anchor-id="working-with-collaborative-repos">Working with collaborative repos</h4>
 <p>For group projects, I suggest that only one person at a time edit the .Rmd file to avoid merge conflicts!</p>
@@ -3162,7 +3162,7 @@ vertical-align: -.125em;
 </div>
 </div>
 </div>
-<p>If you get an error about conflict after pulling or pushing, don’t freak out! This can happen if you edit a file (usually an .Rmd or .R file) in a location that was also changed by a teammate. When this happens you should attempt to fix the <strong>merge conflict</strong>. One simple way to do this is to undo your conflicting commit (in the bottom left of Github Desktop) but be sure to <em>copy/paste your changes somewhere</em>, as undoing the commit will revert the file back to a previous form. Take a look at <a href="http://r-pkgs.had.co.nz/git.html#git-pull">this resource site</a> and try to fix the merge conflict in Rstudio.</p>
+<p>If you get an error about conflict after pulling or pushing, don’t freak out! This can happen if you edit a file (usually an .Rmd or .R file) in a location that was also changed by a collaborator. When this happens you should attempt to fix the <strong>merge conflict</strong>. One simple way to do this is to undo your conflicting commit (in the bottom left of Github Desktop) but be sure to <em>copy/paste your changes somewhere</em>, as undoing the commit will revert the file back to a previous form. Take a look at <a href="http://r-pkgs.had.co.nz/git.html#git-pull">this resource site</a> and try to fix the merge conflict in Rstudio.</p>
 <hr>
 </section>
 </section>
