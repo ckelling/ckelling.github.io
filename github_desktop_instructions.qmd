@@ -1,0 +1,8 @@
+---
+title: "GitHub Desktop Guide" 
+author: "Prof Kelling"
+toc: true
+format:
+  html:
+    self-contained: true
+---
