@@ -34,9 +34,6 @@ website:
       - text: Contact
         menu: 
            -  href: contact.qmd   
-      - text: Github Workshop
-        menu: 
-           -  href: github_desktop_instructions.qmd   
       #- text: Teaching # Comment the Teaching part out to remove the Teaching page
       #  href: teaching.qmd
       #- text: Outreach
@@ -49,6 +46,8 @@ website:
     right: 
       - text: CV
         href: files/Kelling_CV_2pg.pdf
+      - text: Github Workshop
+        href: files/github_desktop_instructions.html
       - icon: github
         href: https://github.com/ckelling
         target: _blank
