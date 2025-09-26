@@ -48,6 +48,8 @@ website:
         href: files/Kelling_CV_2pg.pdf
       - text: Github Workshop
         href: files/github_desktop_instructions.html
+      - text: Fall newsletter
+        href: files/sss_fall_2024_newsletter.pdf
       - icon: github
         href: https://github.com/ckelling
         target: _blank
