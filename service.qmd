@@ -1,0 +1,87 @@
+---
+title: "Selected Service"
+toc: false
+page-layout: full
+---
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# -------------------------------------------------------
+# Edit your service entries here — no HTML needed
+# Leave link as "" if there is no URL for that entry
+# -------------------------------------------------------
+service <- rbind(
+  data.frame(section="Professional Service",              
+             title="Co-Chair, ASA Committee on Law and Justice Statistics",
+             date="2023–2027", description="As the Co-Chair of this committee, I coordinate our webinar and blog series. Check out the work of our committee at this link, and let's connect if you want to get involved. In particular, we invite guest contributions to our monthly blog.", 
+             link="https://amstat.connectedcommunity.org/lawandjusticestatistics/home"),
+  data.frame(section="Professional Service",
+             title="Publications Officer, ASA Social Statistics Section",
+             date="2023–2026", description="Check out our biannual newsletter, which I organize as the Publications Officer for the Section! If you know someone who should be featured in our newsletter, let's connect.", 
+             link="https://community.amstat.org/socialstatisticssection/publications"),
+  data.frame(section="Professional Service",
+             title="Committee Member, Emerging Applications Section, Royal Statistical Society",
+             date="2025–2027", description="", link="rss.org.uk/membership/rss-groups-and-committees/sections/emerging-applications/"),
+    data.frame(section="Professional Service",  
+             title="Statistics Serving Society Ingram Olkin Forums",
+             date="2023-2026",   description="", link="https://www.niss.org/S3Forums"),
+  data.frame(section="College & Departmental",  
+             title="Faculty Co-Advisor, Gender Minorities in Statistics and Mathematics (GeMMS), Carleton College",
+             date="2022–2025", description="", link=""),
+  data.frame(section="College & Departmental",
+             title="Co-Organizer, New Faculty Writing Group, Carleton College",
+             date="2022–2026", description="", link="")
+)
+
+# -------------------------------------------------------
+# Rendering functions — no need to edit below this line
+# -------------------------------------------------------
+make_service_card <- function(title, date, description, link = "") {
+  inner <- paste0(
+    '<div class="card-top">',
+      '<span class="card-title">', title, '</span>',
+      '<span class="card-date">', date, '</span>',
+    '</div>',
+    '<p class="card-body">', description, '</p>'
+  )
+
+  if (!is.na(link) && link != "") {
+    paste0('<a href="', link, '" target="_blank" class="service-card">', inner, '</a>')
+  } else {
+    paste0('<div class="service-card">', inner, '</div>')
+  }
+}
+
+make_service_section <- function(section_name, df) {
+  cards <- vapply(seq_len(nrow(df)), function(i) {
+    make_service_card(df$title[i], df$date[i], df$description[i], df$link[i])
+  }, character(1))
+
+  paste0(
+    '<div class="service-section">',
+      '<div class="service-section-header">',
+        '<span class="section-icon">&#9670;</span>',
+        '<h2>', section_name, '</h2>',
+      '</div>',
+      '<div class="service-grid">',
+        paste(cards, collapse = "\n"),
+      '</div>',
+    '</div>'
+  )
+}
+```
+
+```{r}
+#| echo: false
+#| results: asis
+
+cat('<div class="service-intro"><p>I am committed to service that connects statistics with context in other fields and communities, and supports the development of new statisticians and faculty. Below are some of the roles I am currently engaged in, which I include here with the hopes of connecting with others that have similar interests. Please reference my CV for other service roles. </p></div>\n\n')
+
+for (s in unique(service$section)) {
+  cat(make_service_section(s, service[service$section == s, ]))
+  cat("\n\n")
+}
+```
