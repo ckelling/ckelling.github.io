@@ -31,9 +31,14 @@ website:
       #       href: posts.qmd#category=paper
       #     - text: Grants
       #       href: projects.qmd  
+      - text: Research
+        href: publications.qmd
+      - text: Teaching
+        href: teaching.qmd
+      - text: Service
+        href: service.qmd
       - text: Contact
-        menu: 
-           -  href: contact.qmd   
+        href: contact.qmd   
       #- text: Teaching # Comment the Teaching part out to remove the Teaching page
       #  href: teaching.qmd
       #- text: Outreach
@@ -44,8 +49,8 @@ website:
       #  href: people.qmd
 
     right: 
-      - text: CV
-        href: files/Kelling_CV_2pg.pdf
+      - text: Current CV
+        href: files/kelling_cv.pdf
       - icon: github
         href: https://github.com/ckelling
         target: _blank
@@ -59,8 +64,7 @@ website:
   page-navigation: true
   
   page-footer: 
-    left: "[Claire Kelling](http://www.github.com) &copy; <script>document.write(new Date().getFullYear())</script>" 
-    center: "Adapted from [Quarto Academic Website Template](https://github.com/drganghe/quarto-academic-website-template)"
+    center: "[Claire Kelling](http://www.github.com) &copy; <script>document.write(new Date().getFullYear())</script>" 
     #right:  
       # - icon: github
       #   href: https://github.com/drganghe/quarto-academic-website-template
@@ -89,7 +93,7 @@ website:
   site-url: "https://ckelling.github.io/"
   
 
-bibliography: references.bib  # Add references.bib to the root folder to enable the bibliography function
+#bibliography: references.bib  # Add references.bib to the root folder to enable the bibliography function
 
 format:
   html:
