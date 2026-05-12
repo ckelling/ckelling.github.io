@@ -5,7 +5,7 @@ author: ""
 date: "Spring 2026"
 output:
   xaringan::moon_reader:
-    lib_dir: site_libs
+    lib_dir: libs
     nature:
       highlightStyle: github
       highlightLines: true
@@ -49,6 +49,8 @@ library(xaringan)
 .inverse h1, .inverse h2, .inverse h3 {
   color: #FFFFFF;
 }
+
+.pink  { color: #E05C8A; }
 </style>
 
 # Welcome! Today we hope to...
@@ -125,11 +127,11 @@ countdown(minutes = 15)
 
 # Final Question
 
-**On a .green[GREEN] index card: (one per table)**
+**On a .blue[BLUE] index card: (one per table)**
 
 What programs/opportunities would improve your sense of interdisciplinary belonging at Carleton?
 
-**On a .orange[YELLOW] index card: (one per person)**
+**On a .pink[PINK] index card: (one per person)**
 
 1. What was something that stuck out to you from this event?
 
