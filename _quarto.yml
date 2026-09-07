@@ -109,5 +109,8 @@ format:
     link-external-newwindow: true
     email-obfuscation: javascript
     link-external-filter: '^(?:http:|https:)\/\/ckelling\.github\.io'
-    include-in-header: "files/includes/_academic.qmd"
+    include-in-header:
+      - "files/includes/_academic.qmd"
+      - text: |
+          <script data-goatcounter="https://ckelling.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
